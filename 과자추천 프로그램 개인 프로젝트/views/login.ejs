@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/styles3.css"> <!-- CSS 연결 -->
+</head>
+<body>
+    <div class="form-log-in">
+        <h1 class="login-title">Login</h1>
+        <form action="/login" method="POST" class="input-field"> <!-- 로그인 폼 -->
+            <label for="id" class="label">ID</label>
+            <input type="text" id="id" name="id" class="input" placeholder="Enter your ID" required>
+
+            <label for="password" class="label">Password</label>
+            <input type="password" id="password" name="password" class="input" placeholder="Enter your password" required>
+
+            <div class="button-group">
+                <button type="submit" class="button">Sign In</button>
+            </div>
+        </form>
+        <div class="text-link">
+            <a href="/register" class="forgot-password">Don't have an account? Sign Up</a> <!-- 회원가입 링크 -->
+        </div>
+    </div>
+</body>
+</html>
